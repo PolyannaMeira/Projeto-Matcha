@@ -2,6 +2,8 @@
 
 **Projeto-Matcha** is a small front-end project to practice scroll-driven image transitions using **GSAP** and the **ScrollTrigger** plugin. The hero section layers a matcha glass, spoon, and leaves behind the big “MATCHA” heading; as you scroll into the next section, a GSAP timeline scrubs these elements out of the way (position, rotation, scale). A second timeline animates product cards in from the left and right with gentle rotations, handing off smoothly from the hero to the catalog.
 
+https://github.com/user-attachments/assets/6d14da17-5aa8-4a0b-8c61-3ce85cb1aec9
+
 ## Key Ideas
 - **Scroll-linked timelines** (scrubbed) for precise, reversible motion.
 - **Layering & readability**: heading above imagery (z-index); decorative images use partial opacity.
