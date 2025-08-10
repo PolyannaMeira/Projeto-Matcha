@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(Fonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: Product Sans B;
+    src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #cfe8d1;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0vw 10vw;
+    z-index: 99;
+    background: rgba(47,111,78,0.25);
+  backdrop-filter: blur(6px);
+}
+
+nav a, i{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+    font-size: 1.5vw;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg, #7bbf8c, #cfe8d1);
+}
+
+.one h1{
+    font-size: 20vw;
+    font-family: Product Sans B;
+    color: #fff;
+    position: relative;      /* creates a stacking context for z-index */
+    z-index: 3;              /* higher than the images */
+    text-shadow: 0 6px 16px rgba(0,0,0,.18); /* optional: readability on top of image */
+}
+
+#matcha-latte{
+  width: 30%;
+  height: auto  ;
+  border-radius: 5%;
+  position: absolute;
+  top: 42%;                          /* tweak to taste */
+  left: 50%;
+  transform: translate(-50%, -45%);  /* centers behind the word */
+  z-index: 1;                        /* below the H1 (which is z-index: 3) */
+  opacity: 0.9;                      /* optional: soften a bit behind text */
+  pointer-events: none; 
+}
+
+
+
+
+#leaf{
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 18%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#leaf2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#leaf3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background:#cfe8d1;
+}
+
+.lft-two, .rght-two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.lft-two svg{
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+
+.rght-two h1{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.rght-two p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg, #7bbf8c, #cfe8d1);
+}
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card h1{
+    margin-top: 40vh;
+    font-size: 3vw;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: #3f8f5b;
+    padding: 1vw 2vw;
+}
+
+#matcha-tea{
+    top: 8%;
+    position: absolute;
+    width: 80%;
+    height: 47.5%;
+    left: 50%;
+    border-radius: 5%;
+    background-color: #cfe8d1;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#matcha-ice-cream{
+    top: 10%;
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    border-radius: 5%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.matcha-bkg{
+    top: -30%;
+    position: absolute;
+    left: 50%;
+    border-radius: 5%;
+    width: 25vw;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
